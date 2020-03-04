@@ -25,7 +25,8 @@ void strcp(char *str1, char *str2){
      str2[i]='\0';
 }
 
-int main(int argc, char *argv[]){
+int main(int argc, char *argv[])
+{
     
     if( argc == 1){
         fprintf(stderr, "\nA Leosoft C program for dft calculations.\n    use 'dft --help' for instructions\n\n");
