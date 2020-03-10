@@ -1,8 +1,9 @@
 #include <stdio.h>
 #include <math.h>
-#include <stdlib.h>
-#include "complex.h"
-#include "dft.h"
+//#include <stdlib.h>
+
+#include <complex.h>
+#include <dft.h>
 
 /* DFT: h is the input vector of lenth N */
 complex *dft(complex *h, ulint N){
@@ -14,7 +15,8 @@ complex *dft(complex *h, ulint N){
         cm_zero(H, N, 1);
         
         for(n=0; n<N; n++){
-            for(k=0; k<N; k++){
+            for(k=0; k<N; k++)
+            {
             	aux.Re=cos((double)(2*PI*k*n)/N);
             	aux.Im=sin((double)(2*PI*k*n)/N);
             	H[n]=cadd(H[n], cmult(h[k], aux));

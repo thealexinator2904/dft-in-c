@@ -3,7 +3,7 @@
 #define _DFT_H_
 
 #ifndef _COMPLEX_H_
-#include "complex.h"
+#include <complex.h>
 #endif
 
 #ifndef PI

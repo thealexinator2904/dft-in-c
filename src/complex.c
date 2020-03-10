@@ -1,4 +1,7 @@
-#include "complex.h"
+#include <complex.h>
+#include <stdio.h>
+#include <math.h>
+#include <stdlib.h>
 
 /* FUNCTIONS */
 /**********************************************************************************************/

@@ -1,8 +1,8 @@
 #include <stdio.h>
 #include <math.h>
 #include <stdlib.h>
-#include "complex.h"
-#include "dft.h"
+#include <complex.h>
+#include <dft.h>
 
 int strcmp(char *str1, char *str2){
 
@@ -27,7 +27,6 @@ void strcp(char *str1, char *str2){
 
 int main(int argc, char *argv[])
 {
-    
     if( argc == 1){
         fprintf(stderr, "\nA Leosoft C program for dft calculations.\n    use 'dft --help' for instructions\n\n");
         return 0;
